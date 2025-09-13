@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +17,15 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.appbar.MaterialToolbar;
 
 public class AgregarContacto extends AppCompatActivity {
+
+    private Spinner sp1;
+    private Spinner sp2;
+    private EditText txtNombre;
+    private EditText txtApellido;
+    private EditText txtTelefono;
+    private EditText txtEmail;
+    private EditText txtDireccion;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +40,13 @@ public class AgregarContacto extends AppCompatActivity {
 
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        String [] opciones = {"casa","trabajo","Movil"};
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,opciones);
+        sp1.setAdapter(adapter);
+
     }
 
     @Override

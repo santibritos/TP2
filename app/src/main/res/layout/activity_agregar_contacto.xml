@@ -64,7 +64,7 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/txtNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -79,7 +79,7 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/txtApellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -101,14 +101,14 @@
                     android:layout_marginBottom="16dp">
 
                         <EditText
-                            android:id="@+id/editTextPhone"
+                            android:id="@+id/txtTelefono"
                             android:layout_width="283dp"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:inputType="phone" />
 
                     <Spinner
-                        android:id="@+id/miSpinner"
+                        android:id="@+id/spEmail"
                         android:layout_width="90dp"
                         android:layout_height="34dp"
                         android:entries="@array/opciones_spinner"
@@ -132,14 +132,14 @@
                 android:layout_marginBottom="16dp">
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress"
+                    android:id="@+id/txtEmail"
                     android:layout_width="286dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textEmailAddress" />
 
                 <Spinner
-                    android:id="@+id/miSpinner"
+                    android:id="@+id/spEmail"
                     android:layout_width="90dp"
                     android:layout_height="34dp"
                     android:entries="@array/opciones_spinner"
@@ -158,7 +158,7 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/txtDireccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -172,14 +172,14 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/txtFecha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnContinuar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Continuar" />
