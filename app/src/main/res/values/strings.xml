@@ -27,5 +27,10 @@
     <string name="Tecnologia">Tecnologia</string>
     <string name="Guardar">GUARDAR</string>
     <string name="Continuar">CONTINUAR</string>
+    <string-array name="opciones_spinner">
+        <item>Trabajo</item>
+        <item>Casa</item>
+        <item>Movil</item>
+    </string-array>
 
 </resources>

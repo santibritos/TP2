@@ -42,10 +42,7 @@ public class AgregarContacto extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        String [] opciones = {"casa","trabajo","Movil"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,opciones);
-        sp1.setAdapter(adapter);
 
     }
 

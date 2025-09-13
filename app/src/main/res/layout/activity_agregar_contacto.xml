@@ -111,7 +111,7 @@
                         android:id="@+id/spEmail"
                         android:layout_width="90dp"
                         android:layout_height="34dp"
-                        android:entries="@array/opciones_spinner"
+                        android:entries="@array/opciones_spinner" />
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/toolbar" />
                 </LinearLayout>
@@ -142,7 +142,7 @@
                     android:id="@+id/spEmail"
                     android:layout_width="90dp"
                     android:layout_height="34dp"
-                    android:entries="@array/opciones_spinner"
+                    android:entries="@array/opciones_spinner" />
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
