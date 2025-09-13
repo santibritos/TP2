@@ -4,6 +4,7 @@
     <string name="tituloAgregar">FORMULARIO DE CONTACTO</string>
     <string name="descAgregar">Este es un formulario destinado al registro
     de personas, sus datos personales e intereses.</string>
+    <string name="descAgregar2">A continuacion, por favor se pide completar mas datos personales.</string>
     <string name="tituloEstudios">NIVEL DE ESTUDIOS ALCANZADOS</string>
     <string name="tituloIntereses">INTERESES</string>
     <string name="RecibirInfo">Desea recibir informacion?</string>
