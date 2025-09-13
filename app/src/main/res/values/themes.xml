@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.TP2" parent="Base.Theme.TP2" />
+    <style name="ThemeOverlay.MyMenu" parent="ThemeOverlay.Material3.Dark">
+        <!-- Fondo del popup -->
+        <item name="android:popupBackground">#333333</item>
+        <!-- Color de texto de los items -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
 </resources>
