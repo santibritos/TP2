@@ -1,5 +1,31 @@
 <resources>
     <string name="app_name">TP2</string>
     <string name="tituloListado">Listado de contactos</string>
-    <string name="tituloAgregar">Agregar Contacto</string>
+    <string name="tituloAgregar">FORMULARIO DE CONTACTO</string>
+    <string name="descAgregar">Este es un formulario destinado al registro
+    de personas, sus datos personales e intereses.</string>
+    <string name="tituloEstudios">NIVEL DE ESTUDIOS ALCANZADOS</string>
+    <string name="tituloIntereses">INTERESES</string>
+    <string name="RecibirInfo">Desea recibir informacion?</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="Telefono">Telefono</string>
+    <string name="Email">Email</string>
+    <string name="Direccion">Direccion</string>
+    <string name="FechaNacimiento">Fecha de nacimiento</string>
+    <string name="Casa">Casa</string>
+    <string name="Trabajo">Trabajo</string>
+    <string name="Movil">Movil</string>
+    <string name="PrimarioCompleto">Primario completo</string>
+    <string name="SecundarioCompleto">Secundario completo</string>
+    <string name="PrimarioIncompleto">Primario incompleto</string>
+    <string name="SecundarioIncompleto">Secundario incompleto</string>
+    <string name="Otros">Otros</string>
+    <string name="Deporte">Deporte</string>
+    <string name="Musica">Musica</string>
+    <string name="Arte">Arte</string>
+    <string name="Tecnologia">Tecnologia</string>
+    <string name="Guardar">GUARDAR</string>
+    <string name="Continuar">CONTINUAR</string>
+
 </resources>
