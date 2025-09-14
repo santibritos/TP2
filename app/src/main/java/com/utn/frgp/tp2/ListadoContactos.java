@@ -13,6 +13,16 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.appbar.MaterialToolbar;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListadoContactos extends AppCompatActivity {
 
     @Override
@@ -55,4 +65,40 @@ public class ListadoContactos extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+        private List<Contacto> leerContactosDesdeArchivo() {
+            List<Contacto> contactos = new ArrayList<>();
+            File file = new File(getFilesDir(), FILE_NAME);
+            if (!file.exists()) {
+                return contactos;
+            }
+
+            try {
+                FileReader fr = new FileReader(file);
+                BufferedReader br = new BufferedReader(fr);
+                String linea;
+                while ((linea = br.readLine()) != null) {
+                    String[] campos = linea.split("\\|");
+                    if (campos.length == 9) {
+                        Contacto contacto = new Contacto(
+                                campos[0],
+                                campos[1],
+                                campos[2],
+                                campos[3],
+                                Boolean.parseBoolean(campos[4]),
+                                Boolean.parseBoolean(campos[5]),
+                                campos[6],
+                                campos[7],
+                                Date.valueOf(campos[8])
+                        );
+                        contactos.add(contacto);
+                    }
+                }
+                br.close();
+                fr.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return contactos;
+        }
 }
